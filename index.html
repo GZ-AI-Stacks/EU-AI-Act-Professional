@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
+<link rel="manifest" href="manifest.json">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="EU AI Act Compliance Hub — Interaktiver Leitfaden zur EU-Verordnung über Künstliche Intelligenz">
 <title>EU AI Act — Compliance Hub</title>
@@ -445,7 +446,7 @@ footer a{color:var(--green)}
 </div>
 </div>
 <script>
-var _0x54796b='ea-license';
+var _0x54796b='ea-license-pro';
 function _0x1e94af(s){var h=0x8D53F2C;for(var i=0;i<s.length;i++){h=((h<<5)-h+s.charCodeAt(i))|0;h=(h^(h>>>16))|0;h=(h*0x45d9f3b)|0;}return Math.abs(h);}
 function _0xc7f545(p){var p1=_0x1e94af(p[0]+'ea');var p2=_0x1e94af(p[1]+'eu');var c=(p1^p2^0x454143)>>>0;var k=(c%89990)+10000;return k.toString().substring(0,4);}
 function _0xdeebff(key){if(!key)return false;var k=key.toUpperCase().trim();var m=k.match(/^EA-([A-Z0-9]{4})-([A-Z0-9]{4})-([A-Z0-9]{4})$/);if(!m)return false;return m[3]===_0xc7f545([m[1],m[2]]);}
@@ -2096,7 +2097,8 @@ function resetAudit() {
 function openPrintWindow(html, title, bgColor) {
   const win = window.open('', '_blank', 'width=900,height=700');
   if (!win) { alert('Bitte erlaube Pop-ups für diese Seite.'); return; }
-  win.document.write(`<!DOCTYPE html><html><head><meta charset="UTF-8"><title>${title}</title>
+  win.document.write(`<!DOCTYPE html><html><head><meta charset="UTF-8">
+<link rel="manifest" href="manifest.json"><title>${title}</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
     <style>
       *{margin:0;padding:0;box-sizing:border-box}
@@ -2140,7 +2142,8 @@ function openPrintWindow(html, title, bgColor) {
       <span>Wähle im Druckdialog "Als PDF speichern" als Drucker</span>
     </div>
     ${html}
-  </body></html>`);
+  <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('./sw.js').catch(()=>{});}</script>
+</body></html>`);
   win.document.close();
 }
 
@@ -2326,5 +2329,6 @@ function downloadText(text, filename) {
   });
 })();
 </script>
+<script>if('serviceWorker' in navigator){navigator.serviceWorker.register('./sw.js').catch(()=>{});}</script>
 </body>
 </html>

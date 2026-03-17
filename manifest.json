@@ -1,0 +1,9 @@
+{
+  "name": "EU AI Act · Professional",
+  "short_name": "EU AI Act",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#06080a",
+  "theme_color": "#818cf8",
+  "icons": [{"src": "icon.svg", "sizes": "any", "type": "image/svg+xml"}]
+}
