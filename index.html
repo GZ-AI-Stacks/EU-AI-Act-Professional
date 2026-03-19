@@ -2,12 +2,11 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<link rel="manifest" href="manifest.json">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="EU AI Act Compliance Hub — Interaktiver Leitfaden zur EU-Verordnung über Künstliche Intelligenz">
 <title>EU AI Act — Compliance Hub</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.bunny.net">
+<link href="https://fonts.bunny.net/css?family=inter:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 
@@ -411,51 +410,9 @@ footer a{color:var(--green)}
 .fade-in{animation:fadeIn .5s ease}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.6}}
 .pulse{animation:pulse 2s infinite}
-/* ══════ LICENSE SCREEN ══════ */
-._lsu8z{position:fixed;inset:0;z-index:99999;background:linear-gradient(135deg,#f0f4f8,#e8eef5);display:flex;align-items:center;justify-content:center;padding:24px}
-@media(prefers-color-scheme:dark){._lsu8z{background:linear-gradient(135deg,#1a1a2e,#16213e)}}
-._lsu8z.hidden{display:none}
-._lbv83{width:100%;max-width:400px;text-align:center}
-._llech{font-size:48px;margin-bottom:16px}
-._ltxl6{font-family:'Segoe UI',system-ui,sans-serif;font-size:24px;font-weight:800;color:#2c3e50;margin-bottom:6px}
-@media(prefers-color-scheme:dark){._ltxl6{color:#fff}}
-._lsbj20{font-size:14px;color:#7f8c8d;margin-bottom:28px;line-height:1.5}
-@media(prefers-color-scheme:dark){._lsbj20{color:rgba(255,255,255,0.45)}}
-._licx0{width:100%;padding:16px 18px;border:2px solid #ddd;border-radius:12px;background:#fff;color:#2c3e50;font-family:monospace;font-size:18px;font-weight:700;text-align:center;letter-spacing:3px;text-transform:uppercase;outline:none;transition:border-color .3s;box-sizing:border-box}
-._licx0:focus{border-color:#8b5cf6}
-._licx0::placeholder{color:#ccc;letter-spacing:2px;font-size:14px}
-@media(prefers-color-scheme:dark){._licx0{background:rgba(255,255,255,0.08);color:#fff;border-color:rgba(255,255,255,0.15)}._licx0:focus{border-color:#8b5cf6}._licx0::placeholder{color:rgba(255,255,255,0.2)}}
-._lbts85{width:100%;padding:16px;border:none;border-radius:12px;background:linear-gradient(135deg,#8b5cf6,#7c3aed);color:#fff;font-family:'Segoe UI',system-ui,sans-serif;font-size:16px;font-weight:700;cursor:pointer;margin-top:14px;transition:all .2s;box-sizing:border-box}
-._lbts85:active{transform:scale(0.97);opacity:0.9}
-._le2nj{color:#e74c3c;font-size:13px;font-weight:600;margin-top:12px;min-height:20px}
-._lf9kt{font-size:10px;color:rgba(0,0,0,0.15);margin-top:32px;letter-spacing:2px}
-@media(prefers-color-scheme:dark){._lf9kt{color:rgba(255,255,255,0.08)}}
 </style>
 </head>
 <body data-theme="dark">
-<!-- LICENSE ACTIVATION SCREEN -->
-<div class="_lsu8z" id="_lS9b8e">
-<div class="_lbv83">
-<div class="_llech">&#9878;&#65039;</div>
-<div class="_ltxl6">EU AI Act</div>
-<div class="_lsbj20">Bitte geben Sie Ihren Lizenzschl&uuml;ssel ein,<br>um die App zu aktivieren.</div>
-<input class="_licx0" id="_lItyrx" type="text" placeholder="EA-XXXX-XXXX-XXXX" maxlength="18" autocomplete="off" spellcheck="false">
-<button class="_lbts85" onclick="_0x4ba0e5()">Aktivieren</button>
-<div class="_le2nj" id="_lExvs7"></div>
-<div class="_lf9kt">GZ-AI.-STACKS &middot; EU AI ACT</div>
-</div>
-</div>
-<script>
-var _0x54796b='ea-license-pro';
-function _0x1e94af(s){var h=0x8D53F2C;for(var i=0;i<s.length;i++){h=((h<<5)-h+s.charCodeAt(i))|0;h=(h^(h>>>16))|0;h=(h*0x45d9f3b)|0;}return Math.abs(h);}
-function _0xc7f545(p){var p1=_0x1e94af(p[0]+'ea');var p2=_0x1e94af(p[1]+'eu');var c=(p1^p2^0x454143)>>>0;var k=(c%89990)+10000;return k.toString().substring(0,4);}
-function _0xdeebff(key){if(!key)return false;var k=key.toUpperCase().trim();var m=k.match(/^EA-([A-Z0-9]{4})-([A-Z0-9]{4})-([A-Z0-9]{4})$/);if(!m)return false;return m[3]===_0xc7f545([m[1],m[2]]);}
-function _0x4ba0e5(){var input=document.getElementById('_lItyrx');var error=document.getElementById('_lExvs7');var key=input.value.trim().toUpperCase();if(!key){error.textContent='Bitte Lizenzschl\u00FCssel eingeben';return;}if(_0xdeebff(key)){try{localStorage.setItem(_0x54796b,key);}catch(e){}document.getElementById('_lS9b8e').classList.add('hidden');error.textContent='';}else{error.textContent='Ung\u00FCltiger Lizenzschl\u00FCssel';input.style.borderColor='#e74c3c';setTimeout(function(){input.style.borderColor='';},2000);}}
-try{var _0x85dbf7=localStorage.getItem(_0x54796b);if(_0x85dbf7&&_0xdeebff(_0x85dbf7)){document.getElementById('_lS9b8e').classList.add('hidden');}}catch(e){}
-document.getElementById('_lItyrx').addEventListener('input',function(){var v=this.value.replace(/[^A-Za-z0-9]/g,'').toUpperCase();if(v.length>2&&!v.startsWith('EA'))v='EA'+v.substring(2);var f='';if(v.length>0)f=v.substring(0,2);if(v.length>2)f+='-'+v.substring(2,6);if(v.length>6)f+='-'+v.substring(6,10);if(v.length>10)f+='-'+v.substring(10,14);this.value=f;});
-document.getElementById('_lItyrx').addEventListener('keydown',function(e){if(e.key==='Enter')_0x4ba0e5();});
-</script>
-
 
 <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
 
@@ -2097,9 +2054,8 @@ function resetAudit() {
 function openPrintWindow(html, title, bgColor) {
   const win = window.open('', '_blank', 'width=900,height=700');
   if (!win) { alert('Bitte erlaube Pop-ups für diese Seite.'); return; }
-  win.document.write(`<!DOCTYPE html><html><head><meta charset="UTF-8">
-<link rel="manifest" href="manifest.json"><title>${title}</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  win.document.write(`<!DOCTYPE html><html><head><meta charset="UTF-8"><title>${title}</title>
+    <link href="https://fonts.bunny.net/css?family=inter:300,400,600,700,800,900&display=swap" rel="stylesheet">
     <style>
       *{margin:0;padding:0;box-sizing:border-box}
       body{font-family:'Inter',Arial,Helvetica,sans-serif;color:#1a1f36;background:${bgColor||'#fff'};-webkit-print-color-adjust:exact;print-color-adjust:exact}
@@ -2114,27 +2070,7 @@ function openPrintWindow(html, title, bgColor) {
       .print-bar .btn-print:hover{background:#047a40}
       .print-bar .btn-close{background:#e2e8f0;color:#4a5578}
       .print-bar span{color:#7a8599;font-size:13px}
-    
-._lsu8z{position:fixed;inset:0;z-index:99999;background:linear-gradient(135deg,#f0f4f8,#e8eef5);display:flex;align-items:center;justify-content:center;padding:24px}
-@media(prefers-color-scheme:dark){._lsu8z{background:linear-gradient(135deg,#1a1a2e,#16213e)}}
-._lsu8z.hidden{display:none}
-._lbv83{width:100%;max-width:400px;text-align:center}
-._llech{font-size:48px;margin-bottom:16px}
-._ltxl6{font-family:'Segoe UI',system-ui,sans-serif;font-size:24px;font-weight:800;color:#2c3e50;margin-bottom:6px}
-@media(prefers-color-scheme:dark){._ltxl6{color:#fff}}
-._lsbj20{font-size:14px;color:#7f8c8d;margin-bottom:28px;line-height:1.5}
-@media(prefers-color-scheme:dark){._lsbj20{color:rgba(255,255,255,0.45)}}
-._licx0{width:100%;padding:16px 18px;border:2px solid #ddd;border-radius:12px;background:#fff;color:#2c3e50;font-family:monospace;font-size:18px;font-weight:700;text-align:center;letter-spacing:3px;text-transform:uppercase;outline:none;transition:border-color .3s;box-sizing:border-box}
-._licx0:focus{border-color:#8b5cf6}
-._licx0::placeholder{color:#ccc;letter-spacing:2px;font-size:14px}
-@media(prefers-color-scheme:dark){._licx0{background:rgba(255,255,255,0.08);color:#fff;border-color:rgba(255,255,255,0.15)}._licx0:focus{border-color:#8b5cf6}._licx0::placeholder{color:rgba(255,255,255,0.2)}}
-._lbts85{width:100%;padding:16px;border:none;border-radius:12px;background:linear-gradient(135deg,#8b5cf6,#7c3aed);color:#fff;font-family:'Segoe UI',system-ui,sans-serif;font-size:16px;font-weight:700;cursor:pointer;margin-top:14px;transition:all .2s;box-sizing:border-box}
-._lbts85:active{transform:scale(0.97);opacity:0.9}
-._le2nj{color:#e74c3c;font-size:13px;font-weight:600;margin-top:12px;min-height:20px}
-._lf9kt{font-size:10px;color:rgba(0,0,0,0.15);margin-top:32px;letter-spacing:2px}
-@media(prefers-color-scheme:dark){._lf9kt{color:rgba(255,255,255,0.08)}}
-
-</style>
+    </style>
   </head><body>
     <div class="print-bar no-print">
       <button class="btn-print" onclick="window.print()">Als PDF speichern / Drucken</button>
@@ -2142,8 +2078,7 @@ function openPrintWindow(html, title, bgColor) {
       <span>Wähle im Druckdialog "Als PDF speichern" als Drucker</span>
     </div>
     ${html}
-  <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('./sw.js').catch(()=>{});}</script>
-</body></html>`);
+  </body></html>`);
   win.document.close();
 }
 
@@ -2329,6 +2264,5 @@ function downloadText(text, filename) {
   });
 })();
 </script>
-<script>if('serviceWorker' in navigator){navigator.serviceWorker.register('./sw.js').catch(()=>{});}</script>
 </body>
 </html>
